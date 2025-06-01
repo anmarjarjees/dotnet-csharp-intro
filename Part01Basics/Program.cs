@@ -65,12 +65,14 @@ namespace Part01Basics
   internal class Program
   {
     /*
-     * By convention, the main entry point of a C# application 
-     * is typically named Program.
-     * This is the default name and helps indicate 
-     * the starting point of the application.
+     * This .cs file is the main entry point of a C# application 
+     * is typically named Program by default when starting a new project.
+     * "Program" is the default name:
+        > it helps indicate the starting point of the application.
      */
     /*
+      "static void Main(string[] args)" Explanation:
+      **********************************************
       - The "Main" method is the entry point of a C# console application:
       - The "Main" method is the starting point where execution begins
         > 'static' means it belongs to the class itself and not to a specific object.
@@ -100,9 +102,19 @@ namespace Part01Basics
       Link: https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/main-and-command-args
     */
 
-    // 'string[] args' is used for command-line arguments.
-    // We're not using it in this beginner example,
-    // so it's safe to remove it or ignore the warning:
+    /*
+    "static void Main(string[] args)" Explanation Continued:
+    *******************************************************
+    - This method "Main" has on parameter "args"
+    - The parameter "args" is an array of string data type
+    - "args" is used for command-line arguments, which is meant to capture command-line arguments
+
+    NOTE:
+    *****
+    Notice that we are not using "args" in our coding example,
+    So the compiler will show this warning: "Remove unused parameter 'args'".
+    It's safe to remove it or ignore the warning:
+    */
     static void Main(string[] args)
     {
       // ====== Hello World ======
@@ -123,16 +135,17 @@ namespace Part01Basics
       // 'Console.ReadLine()' reads a line of input as a string from the user
       // Use null-coalescing to avoid null issues:
       string subject = Console.ReadLine() ?? ""; // Reads a line (safe against null)
-                                                 // Link: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/null-coalescing-operator
+
+      // Link: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/null-coalescing-operator
       /*
        * To recap:
        * *********
        * This line ==> "Console.ReadLine() ?? "";
        * reads user input and uses ?? to handle null values:
        * - If the user presses Enter without typing anything, 
-       *  > Console.ReadLine() might return null.
+       *  > Console.ReadLine() might return null
        *  The ?? operator says: "If it's null, use an empty string instead."
-       *  So this guarantees 'subject' always has a valid (non-null) value.
+       *  So this guarantees that the variable "subject" always has a valid (non-null) value
        *  
        *  In Java:
        *  ********
