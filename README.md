@@ -7,7 +7,11 @@ Intro to C# and OOP Using .NET for Beginners
         - Program.cs => Variables, input/output
         - CastingDemo.cs => Type casting and conversion
         - ControlFlow.cs => Conditional logic: if, else
-    
+    - Part02ControlFlowAndCollections: 
+        - SwitchDemo.cs => Switch Statement
+        - ArrayDemo.cs => 1D and 2D arrays
+        - LoopsDemo.cs => For, While, and Do-While loop
+        - ListsDemo.cs => List Collection
 
 # Project Initial Steps
 Below are the general steps you need to follow in creating a simple C# console app:
