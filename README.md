@@ -12,6 +12,8 @@ Intro to C# and OOP Using .NET for Beginners
         - ArrayDemo.cs => 1D and 2D arrays
         - LoopsDemo.cs => For, While, and Do-While loop
         - ListsDemo.cs => List Collection
+    - Part03MethodsAndScopes:
+        - Program.cs => Methods Full Demonstration
 
 # Project Initial Steps
 Below are the general steps you need to follow in creating a simple C# console app:
