@@ -14,6 +14,9 @@ Intro to C# and OOP Using .NET for Beginners
         - ListsDemo.cs => List Collection
     - Part03MethodsAndScopes:
         - Program.cs => Methods Full Demonstration
+    - Part04ObjectOrientedBasics:
+        - Person.cs => Class definition (fields, properties, constructor, method)
+        - Program.cs => Main method (creates objects, calls methods)
 
 # Project Initial Steps
 Below are the general steps you need to follow in creating a simple C# console app:
