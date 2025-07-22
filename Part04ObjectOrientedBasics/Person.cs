@@ -142,7 +142,7 @@ namespace Part04ObjectOrientedBasics
             get { return _age; }
             set
             {
-                if (value >= 0)
+                if (value > 0)
                     _age = value;
                 else
                     Console.WriteLine("Invalid age! Must be non-negative value.");
@@ -168,6 +168,7 @@ namespace Part04ObjectOrientedBasics
             _name = "Unknown";
             _age = 0;
             _email = "unknown@example.com";
+            // or we can just leave it empty!
         }
 
         /*
@@ -191,12 +192,23 @@ namespace Part04ObjectOrientedBasics
         }
 
         /*
-            Method: GetPersonInfo
-            Returns formatted details about the person.
+            Method: PrintPersonInfo
+            Print formatted details about the person.
 
             Best practice: 
             use methods to encapsulate functionality inside a class.
+
+            Demonstrates void method (no return type)
         */
+        public void PrintPersonInfo()
+        {
+            Console.WriteLine($"Name: {_name}\nAge: {_age}\nEmail: {_email}");
+        }
+
+        /*
+         *  Method: GetPersonInfo
+         *  Returns formatted details about the person
+         */
         public string GetPersonInfo()
         {
             string details = $"Name: {_name}\nAge: {_age}\nEmail: {_email}";
@@ -204,9 +216,11 @@ namespace Part04ObjectOrientedBasics
         }
 
         /*
+            We can call our method inside another one:
             Method: DisplayPersonInfo
-            Prints the person's info to the console.
-            Demonstrates void method (no return type).
+            Prints the person's info to the console,
+            By calling "GetPersonInfo" within the "WriteLine"
+            Also Demonstrates void method (no return type)
         */
         public void DisplayPersonInfo()
         {

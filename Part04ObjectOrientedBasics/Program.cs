@@ -42,6 +42,10 @@ namespace Part04ObjectOrientedBasics
             // -----------------------------------------------
             Person person1 = new Person(); // uses default values
             Console.WriteLine("\n[Person 1 - Default Constructor]");
+            
+            // Calling the public method(s):
+            person1.PrintPersonInfo();
+            // OR:
             person1.DisplayPersonInfo();
 
             // Updating properties manually using public setters
@@ -50,13 +54,19 @@ namespace Part04ObjectOrientedBasics
             person1.Email = "alex@example.com";
 
             Console.WriteLine("\n[Person 1 - After Updating Properties]");
+            // Calling the public method(s):
+            person1.PrintPersonInfo();
+            // OR:
             person1.DisplayPersonInfo();
 
             // Object 2: Created using the parameterized constructor
             // -----------------------------------------------------
             Person person2 = new Person("Sarah Grandson", 30, "sarah@example.com");
             Console.WriteLine("\n[Person 2 - Parameterized Constructor]");
-            person2.DisplayPersonInfo();
+            // Calling the public method(s):
+            person1.PrintPersonInfo();
+            // OR:
+            person1.DisplayPersonInfo();
 
             // Object 3: Using GetPersonInfo() to store result
             // -----------------------------------------------
